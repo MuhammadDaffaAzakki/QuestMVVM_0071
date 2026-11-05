@@ -47,4 +47,13 @@ fun FormSiswa(
     var txtAlamat by remember { mutableStateOf("")}
     var txtGender by remember { mutableStateOf("")}
 
-
+    Scaffold(
+        modifier = Modifier,
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(id = R.string.app_name), color = Color.White) },
+                colors = TopAppBarDefaults.mediumTopAppBarColors(containerColor = colorResource(id = R.color.purple_500))
+            )
+        }
+    ) { isiRuang ->
+        
